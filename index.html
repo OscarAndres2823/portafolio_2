@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Oscar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="img/yo2.jpg" alt="Foto de perfil" class="foto-perfil" />
+    <h1>¡Hola, soy <span class="nombre">Oscar Andrés</span>!</h1>
+    <p class="subtitulo">Desarrollador Web | Creativo | Apasionado por la tecnología</p>
+    <div class="redes">
+      <a href="https://github.com/OscarAndres2823?tab=repositories" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/andres-toloza-ortiz/" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <section class="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy un desarrollador web creativo con enfoque en diseño atractivo, responsive y funcional. Me gusta convertir ideas en experiencias visuales y funcionales, aprendiendo constantemente nuevas tecnologías.</p>
+  </section>
+
+  <section class="proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="cards">
+      <div class="card" onclick="abrirModal('modal2')">
+        <h3>🎮 Web Hambur</h3>
+        <p>Explora, compra comida rapida.</p>
+      </div>
+      <div class="card" onclick="abrirModal('modal1')">
+        <h3>🧾 Factura Interactiva</h3>
+        <p>Simula una factura dinámica con componentes web.</p>
+      </div>
+      <div class="card" onclick="abrirModal('modal3')">
+        <h3>🎵 App de Eventos Musicales</h3>
+        <p>Explora, compra y gestiona entradas para conciertos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv">
+    <h2>📄 Mi CV</h2>
+    <p>Puedes descargar mi hoja de vida aquí:</p>
+    <a href="https://drive.google.com/file/d/1_4tjr9bvE5bPPcj0NkUPA2r0DPJySc4J/view?usp=drive_link" download class="boton cv-boton">Descargar CV</a>
+  </section>
+
+  <section class="contacto">
+    <h2>Contacto</h2>
+    <a href="mailto:oscarandresortiz17@gmail.com" class="boton">Contáctame</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Oscar Andrés</p>
+  </footer>
+
+  <!-- Modales -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal('modal1')">&times;</span>
+      <img src="img/image3.png" alt="Vista previa de Chachipun" />
+      <h3>Online Store</h3>
+      <p>Simula una factura dinámica con componentes web.</p>
+      <div class="modal-botones">
+        <a href="https://github.com/OscarAndres2823/online-store.git" target="_blank" class="boton">Ver Código</a>
+        <a href="https://github.com/OscarAndres2823/online-store.git" target="_blank" class="boton">Probar Proyecto</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal('modal2')">&times;</span>
+      <img src="img/image2.png" alt="Vista previa de Factura Interactiva" />
+      <h3>Web Hambur</h3>
+      <p>App para explorar , comprar y gestionar comidas rapidas.</p>
+      <div class="modal-botones">
+        <a href="https://github.com/OscarAndres2823/Hambur-websitie/tree/main/PaginaWebHambur" target="_blank" class="boton">Ver Código</a>
+        <a href="https://github.com/OscarAndres2823/Hambur-websitie/tree/main/PaginaWebHambur" target="_blank" class="boton">Probar Proyecto</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal('modal3')">&times;</span>
+      <img src="img/image.png" alt="Vista previa de App de Eventos Musicales" />
+      <h3>App de Eventos Musicales</h3>
+      <p>App para explorar eventos musicales, comprar entradas y llevar seguimiento de tus conciertos favoritos.</p>
+      <div class="modal-botones">
+        <a href="https://github.com/OscarAndres2823/Music_proyect?tab=readme-ov-file" target="_blank" class="boton">Ver Código</a>
+        <a href="https://timely-capybara-489d66.netlify.app/" target="_blank" class="boton">Probar Proyecto</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="web.js"></script>
+</body>
+</html>
